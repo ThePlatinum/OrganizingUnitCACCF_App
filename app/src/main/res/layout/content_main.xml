@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="innovations.tech.platinum.organizingunitcaccf.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/Word_Today"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        layout="@layout/word_today_layout"
+        android:layout_margin="5dp"/>
+
+    <include
+        android:id="@+id/LatestNews"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        layout="@layout/news_layout"
+        android:layout_margin="5dp" />
+
+    <include
+        android:id="@+id/Schedule"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        layout="@layout/schedule_layout"
+        android:layout_margin="5dp" />
+
+</LinearLayout>

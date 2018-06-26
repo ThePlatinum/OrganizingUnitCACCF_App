@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/pp"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/avatar"
+        >
+        <ImageView
+            android:id="@+id/ProfilePics"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start|bottom"
+            android:adjustViewBounds="true"
+            android:onClick="profile"
+            android:padding="10dp"
+            android:contentDescription="@string/profile_picture"
+            android:clickable="true"
+            android:src="@mipmap/avatar" />
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainMessage"
+        android:layout_below="@id/pp"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:text="@string/organizers_for_christ"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainName"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        android:layout_below="@id/mainMessage" />
+
+</RelativeLayout>
